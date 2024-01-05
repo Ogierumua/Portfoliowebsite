@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     alert("welcome")
 });
-document.getElementbyById("cyber");
+document.getElementbyById("cyber");*/
