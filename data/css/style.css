@@ -116,4 +116,15 @@ a:hover {
 
 
 
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.home-section{
+    position: relative;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
 
