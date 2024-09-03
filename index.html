@@ -7,12 +7,16 @@
   <meta name="description" content="" />
  
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 <link rel="stylesheet" href="data/css/style.css">
+</head>
 <body>
   <header class="main-header">
 
  
-<nav class="navbar header-nav navbar-expand-lg navbar-dark bg-dark fw-bold ">
+<nav class="navbar header-nav navbar-expand-lg navbar-dark bg-secondary fw-bold ">
     
   <div class="container-xxl">
     <a class="navbar-brand" href="./index.html">
@@ -63,19 +67,23 @@
   
 </nav>
 </header>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <main>
-  <section id="home" class="home-section">
+  <section id="home" class="home-section bg-cyan">
     <div class="container">
+      <div class="anim-elements">
+        <div class="anim-element"><i class="bx bxl-apple"></i></div>
+        <div class="anim-element"><i class="bx bxl-css3"></i></div>
+        <div class="anim-element"><i class="bx bxl-react"></i></div>
+        <div class="anim-element"><i class="bx bxl-android"></i></div>
+        <div class="anim-element"><i class="bx bxl-apple"></i></div>
+
+      </div>
       <div class="row gy-5 align-items-center">
         <div class="col-lg-6">
         <div class="home-intro text-center text-lg-start">
           <h5>Hi My Name is Ogierumua,</h5>
-          <h1>I'm an IT Professional Specialised in IT Support and Data Science</h1>
+          <h1>I'm an IT Professional   Specialised in IT Support and <span>Data Science</span></h1>
           <p>Based in Northampton, United Kingdom</p>
           <a href="#about" class="btn btn-danger">About Me</a>
 
@@ -94,12 +102,203 @@
 
   </section>
 
+
+
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="row gy-5 align-items-center">
+      <div class="col-lg-6 text-center about-img">
+        <img src="data/img/about.jpg" alt="">
+
+      </div>
+      <div class="col-lg-6 ps-lg-5">
+        <div class="about-text">
+          <h3 class="h1 mb-3 text-dark fw-semibold">I' a support Engineer and 
+            a Data Scientist with 7+ years experience
+          </h3>
+          <P> I am proficient in Python-based frameworks such as Django and Flask for backend 
+            development and React for frontend. My expertise extends to containerization using 
+            Docker and orchestration with Kubernetes, ensuring seamless deployment and management 
+            of applications. I excel in integrating Bootstrap for responsive design, creating intuitive 
+            user interfaces. </P>
+            <div class="row pt-2">
+              <div class="col-6 col-md-4">
+                <h5 class="text-danger fw-semibold fs-4 mb-0">045</h5>
+                <span class="text-dark">Projects Completed</span>
+              </div>
+
+              <div class="col-6 col-md-4">
+                <h5 class="text-danger fw-semibold fs-4 mb-0">200+ </h5>
+                <span class="text-dark"> cliet Feedback</span>
+              </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section  id="services" class="section bg-cyan" style="background-image: 
+url(data/img/ground.jpg);">
+<div class="container">
+  <div class="section-heading">
+    <h3 class="text-white fw-bold">My Services</h3>
+  </div>
+  <div class="row gy-4">
+    <div class="col-md-6">
+      <div class="feature-box bg-1">
+        <div class="icon"><i class="bx bx-brush"></i></div>
+        <div class="content">
+          <h5 class="text-white fw-bold">IT Support</h5>
+          <p class="text-white ">Help Desk Support: Offering first-line support for end-users, helping with a variety of technical issues including 
+            software glitches, hardware failures, and network connectivity problems.
+            Remote Assistance: Using remote desktop tools to resolve issues without the need for on-site visits, 
+            which is efficient for addressing problems quickly.
+           </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+      <div class="feature-box bg-2">
+        <div class="icon"><i class="bx bx-globe"></i></div>
+        <div class="content">
+          <h5 class="text-white fw-bold">Data Science</h5>
+          <p class="text-white ">Predictive Analytics: Building models that predict future outcomes based on historical 
+            data, such as customer behavior, 
+            sales trends, or risk assessment.
+            Time Series Forecasting: Developing models to forecast trends, demand, or other time-dependent variables, 
+            which is crucial for inventory management, financial planning, and market analysis.
+           
+           </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+      <div class="feature-box bg-2">
+        <div class="icon"><i class="bx bx-desktop"></i></div>
+        <div class="content">
+          <h5 class="text-white fw-bold">Data Analysis</h5>
+          <p class="text-white ">Data Sourcing: Identifying and gathering data from various sources, including databases, 
+            APIs, web scraping, and third-party providers to ensure a comprehensive dataset.
+            Data Cleaning: Removing duplicates, correcting errors, handling missing data, and ensuring data consistency 
+           
+           
+           </p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+</section>
+
+
+<section id="skills" class="secction">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-6">
+        <div class="section-heading text-start">
+          <h3>My Skills</h3>
+        </div>
+        <div class="skill-box">
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-6">
+              <div class="feature-box feature-box-small bg-1">
+                <div class="icon">
+                  <i class="bx bxl-android"></i>
+                </div>
+                <h6>Networking</h6>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-6">
+              <div class="feature-box feature-box-small bg-1">
+                <div class="icon">
+                  <i class="bx bxl-android"></i>
+                </div>
+                <h6>python</h6>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-6">
+              <div class="feature-box feature-box-small bg-1">
+                <div class="icon">
+                  <i class="bx bxl-android"></i>
+                </div>
+                <h6>Deep Learning</h6>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-6">
+              <div class="feature-box feature-box-small bg-1">
+                <div class="icon">
+                  <i class="bx bxl-android"></i>
+                </div>
+                <h6>Power Bi</h6>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-6 img-skill">
+              <img src="data/img/skill.jpg" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="portfolio" class="section bg-red">
+  <div class="container">
+    <div class="section-heading">
+      <h3>Latest Projects</h3>
+    </div>
+    <div class="portfolio-box">
+      <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3
+      justify-content-around align-items-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="portfolio-img">
+          <img src="data/img/skill.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="portfolio-text">
+          <span>Data Analysis Proj</span>
+          <h4>Data Analysis and Power Bi Proj</h4>
+          <p>Time Series Forecasting: Developing models to forecast trends, demand, or other time-dependent variables, 
+            which is crucial for inventory management, financial planning, and market analysis.</p>
+            <a href="#" class=" colored-btn mt-1">Live Demo </a>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  
+</section>
+
 </main>
-
-
-
-
-
 
 
   <footer class="bg-secondary text-light text-center py-3">
