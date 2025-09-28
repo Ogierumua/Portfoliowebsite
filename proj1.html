@@ -351,10 +351,327 @@
             
             
       
-      
-                          
+                                <div class="row justify-content-center align-items-center">
+                                  <div class="col-md-5 text-left text-md-">
+                                      <h2>
+                                          <br>
+                                          <br>
+                                     </h2>
+                                          <h3>Display Order Number and Product Line From First </h3>
+                                          <p>we want to display the order number, productline from the first table and we will name
+                                            that product1, and also productline from the second table, and we will name it product2
+                                            since there is pultiple product purchaes, we are going toi see duplicates, we have classic
+                                            cars, we see the same product, but its matching multiple products from the second table, 
+                                            even though they are in the same productline, so we want to select distinct list of ordernumber
+                                            product line one and product line two, just to see which product lines are purchased together
+                                            we change the star to distinct and it will be t1.order number, t1.productline and we name that as product
+                                            _one and t2.productline and we will name that product two and it returns each order number, product one
+                                            and product two
+                                            </p>
+                                            <a href="" class="btn btn-danger"> Get database Script</a>
+                                          
+                                      <br>
+                                      <br>    
+                                  </div>
+                              <div class="col-md-5 text-center d-sm-block d-md-block">
+                                    <img class="img-fluid"  src="./data/img/classic/prod5.PNG" alt="">
+                               </div>
+                                      <br>
+                  
+                  
+            
+             <div class="container">
+              <hr class="">
+             </div>             
               
   
+  
+      </div>
+  
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-left text-md-">
+              <h2>
+                  <div class="fw-bold text-danger text-center">Stage 4</div>
+             </h2>
+                  <h3>Breakdown of Sales and their  Credit Limit</h3>
+                  <p>In order to better understand the relationship between customer credit limits and sales performance, 
+                    this report provides a breakdown of sales, grouped by customer credit limits. The goal is to determine
+                     whether customers with higher credit limits tend to generate more sales, 
+                    as one would expect, since a higher credit limit typically indicates greater purchasing power</p><br>
+                    <a href="" class="btn btn-danger"> Get database Script</a>
+                  
+          </div>
+      <div class="col-md-5 text-center d-sm-block d-md-block">
+            <img class="img-fluid"  src="data/img/classic/sales1.PNG" alt="">
+            <br>
+       </div>
+              <br>
+
+                        <br>
+                        <div>
+
+                        </div>
+
+              <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-left text-md-">
+                    
+                        <h3>Bringing in Customers <Table></Table></h3>
+                        <p>lets bring customers table, click on customers table, we have the customer number
+                          as its primary key, and in our orders table we also have customer number, so we can then
+                          inner join the customers table and we will name it t1.customernumber = t3.customernumber
+                          which gives us our customer details and on the right hand side we have the credit limit
+                          </p><br>
+                          <a href="" class="btn btn-danger"> Get database Script</a>
+                        
+                </div>
+            <div class="col-md-5 text-center d-sm-block d-md-block">
+                  <img class="img-fluid"  src="data/img/classic/sales2.PNG" alt="">
+             </div>
+                    <br>
+
+
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-md-5 text-left text-md-">
+                          
+                              <h3>Displaying Order Number Customers Number <Table></Table></h3>
+                              <p>instead of displaying all columnds, lets bring in order number, and we also want to 
+                                display customer number and product code, since its an ambiguous column, we will need
+                                to reference which table we are bringing it from, productcode and we want the price
+                                qauntity as well and the credit limit, i will have another ambigous column order number, 
+                                so we will bring it from t1, now we have all the columns that we need
+                                </p><br>
+                                <a href="" class="btn btn-danger"> Get database Script</a>
+                              
+                      </div>
+                  <div class="col-md-5 text-center d-sm-block d-md-block">
+                        <img class="img-fluid"  src="data/img/classic/sales3.PNG" alt="">
+                   </div>
+                          <br>
+
+
+
+                          <div class="row justify-content-center align-items-center">
+                            <div class="col-md-5 text-left text-md-">
+                                
+                                    <h3>Multiplying Quantity Ordered by Priceeach to get Sales <Table></Table></h3>
+                                    <p>we will bring credit limit into its own new row and we will add a column for priceeach
+                                      multiplied by quantity ordered just to get the sales value, which implies priceeach star
+                                      qauntity oredered  and we will name the column sales value, now we have the sales value
+                                      
+                                      </p><br>
+                                      <a href="" class="btn btn-danger"> Get database Script</a>
+                                    
+                            </div>
+                        <div class="col-md-5 text-center d-sm-block d-md-block">
+                              <img class="img-fluid"  src="data/img/classic/sales4.PNG" alt="">
+                         </div>
+                                <br>
+                
+          
+
+
+
+                                <div class="row justify-content-center align-items-center">
+                                  <div class="col-md-5 text-left text-md-">
+                                      
+                                          <h3>Displaying Order Number and Total Sales Valus <Table></Table></h3>
+                                          <p>i would like a view that shows the order number, and the total sales value, we dont need to see 
+                                            the product breakdown anymore, we need to query from this table and only bring back order number
+                                            customer number will bring the credit limit and we will sum the sales value, we create a CTE to do this,
+                                            and name it sales, and we will bring back order number, customer number, credit limit which we will 
+                                            group as well, we need to get sales value and then sum of sales value and name it sales value and
+                                            we are querying from the sales table and we need to groupby our first three non aggregate columns
+                                            which gives us each order number, customer number, the credit limit of the customer and the value of
+                                            that sale of that order
+                                            </p><br>
+                                            <a href="" class="btn btn-danger"> Get database Script</a>
+                                          
+                                  </div>
+                              <div class="col-md-5 text-center d-sm-block d-md-block">
+                                    <img class="img-fluid"  src="data/img/classic/sales5.PNG" alt="">
+                               </div>
+                                      <br>
+                      
+                
+
+                                      <div class="row justify-content-center align-items-center">
+                                        <div class="col-md-5 text-left text-md-">
+                                            
+                                                <h3>Grouping Credit Limit <Table></Table></h3>
+                                                <p>we can now group credit limit by bringing it into its own column and we use case when, we will do
+                                                  less than 75000, we will label a letter first, so that they areb in order meaning a less tahn 75k
+                                                  we will only do four groupings, and we ill add another incase we made a mistake, so 
+                                                  when credit limit is between 75000 and 100000 then b:75k - 100k
+                                                  when credit limit is between 1oo000 and 150000 then b:100k - 105k
+                                                  when credentials > 150000 then 'd: over 150k' 
+                                                  
+                                                  </p><br>
+                                                  <a href="" class="btn btn-danger"> Get database Script</a>
+                                                
+                                        </div>
+                                    <div class="col-md-5 text-center d-sm-block d-md-block">
+                                          <img class="img-fluid"  src="data/img/classic/sales6.PNG" alt="">
+                                     </div>
+                                            <br>
+                            
+                      
+    
+              <div class="container">
+                  <hr class="class bg-secondary">
+              </div>
+    
+      </div>
+    
+    </div>
+    </section>
+
+
+  
+
+  
+<section>
+  <div class="container">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-left text-md-">
+              <h2>
+                  <div class="fw-bold text-danger text-center">Stage 5</div>
+             </h2>
+                  <h3>Customer Sales With Difference in Value from Difference Sales</h3>
+                  <p>we want to see if new customers who make their first purchase are likely to spend more
+                    we want the customer details, order details and order value, lets bring everything from
+                    orders table, we are using the orders table because we need the customer number so that 
+                    we can get customer details, as you can see we want to bring in the customer name</p><br>
+                    <a href="" class="btn btn-danger"> Get database Script</a>
+                  
+                  
+          </div>
+      <div class="col-md-5 text-center d-sm-block d-md-block">
+            <img class="img-fluid"  src="./data/img/classic/salesdiff1.PNG" alt="">
+       </div>
+              
+
+
+
+
+              <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-left text-md-">
+                    <h2>
+                        <br>
+                        <br>
+                   </h2>
+                        <h3>Bringing Custromer Name Before Joining The Table</h3>
+                        <p>we want to bring in the customer name, before we join the customer table, we will join 
+                          the order details table to get the sales value, add inner join orderdetails to the above code
+                          and we join that on order number, we then have multiple rows because its broken down into product.
+                          . </p>
+                          <a href="" class="btn btn-danger"> Get database Script</a>
+                        
+                    <br>
+                    <br>    
+                </div>
+            <div class="col-md-5 text-center d-sm-block d-md-block">
+                  <img class="img-fluid"  src="./data/img/classic/salesdiff2.PNG" alt="">
+             </div>
+                    <br>
+
+
+
+                    <div class="row justify-content-center align-items-center">
+                      <div class="col-md-5 text-left text-md-">
+                          <h2>
+
+                              <h3>Product Breakdown By Sales Value</h3>
+                              <p>we need the product breakdown cause we want to calculate the sales value, before we join the customers t
+                                table, we will multiply quantity ordered by priceeach to get the sales value and we will name it sales
+                                value, and rather than bringing back everything, lets just bring back the order number added after 
+                                select, we want the order date, and the customer number, so we need to specify t1 order number as it is
+                                ambigious and the sales value, we will also want to bring product code so it is broken down by product so
+                                it can work out the sales value, then we can take a sum of that, but we have to create a query with
+                                the table to do that, we want to sum so that we have one order number sales value of the
+                                first four orders, lets use sub query to do this, put the query inside a bracket and name
+                                it, we want everything except product code, so we bring order number, order date, customer
+                                number and the sum of the sales value and we will name it sales value, we will then group it by our 
+                                first three columns after our main sub query and we group by the three columns and this
+                                gives us only one row for each order number
+                                
+                                 </p>
+                                <a href="" class="btn btn-danger"> Get database Script</a>
+                              
+                              
+
+
+                      </div>
+                  <div class="col-md-5 text-center d-sm-block d-md-block">
+                        <img class="img-fluid"  src="./data/img/classic/salesdiff3.PNG" alt="">
+                   </div>
+                          <br>
+            
+                   
+                          <div class="row justify-content-center align-items-center">
+                            <div class="col-md-5 text-left text-md-">
+                                <h2>
+                                    <br>
+                                    <br>
+                               </h2>
+                                    <h3>Using a CTE in Place of Subquery for the above</h3>
+                                    <p> we can make the output a table again, we will use a CTE this time, it will be a sub query inside a 
+                                      CTE, we can then join the  CTE to the customer table to get the customer details, with main CTE as open brackets
+                                      and then close the brackets after, we can select star from main CTE, to get same output</p>
+                                      <a href="" class="btn btn-danger"> Get database Script</a>
+                                    
+                                <br>
+                                <br>    
+                            </div>
+                        <div class="col-md-5 text-center d-sm-block d-md-block">
+                              <img class="img-fluid"  src="./data/img/classic/salesdiff4.PNG" alt="">
+                         </div>
+                                <br>
+            
+            
+
+
+              
+                                <div class="row justify-content-center align-items-center">
+                                  <div class="col-md-5 text-left text-md-">
+                                      <h2>
+                                          <br>
+                                          <br>
+                                     </h2>
+                                          <h3>Using a CTE in Place of Subquery for the above with Customer Name</h3>
+                                          <p>now we can join customers and we will join that on t1.customer number equals t2.customer number,
+                                            lets bring back ecrything usingwhich gives us the customer detsails and all their orders, but we only have one order per order number
+                                            becaiuse we have aggregated the value of that sale, we will just bring the customer name back, from
+                                            the customers table as we dont need anything else, rather than bringing all from both tables, we just 
+                                            put one t1.all and it will bring everything from the main CTE and customer name from customer table
+                                            and you see thsat the first customer has made three orders, and by using row number, we can order these
+                                            sales by order date, we will also need to use lag or lead to get the value of their previous or next purchase
+                                            
+                                            </p>
+                                            <a href="" class="btn btn-danger"> Get database Script</a>
+                                          
+                                      <br>
+                                      <br>    
+                                  </div>
+                              <div class="col-md-5 text-center d-sm-block d-md-block">
+                                    <img class="img-fluid"  src="./data/img/classic/salesdiff5.PNG" alt="">
+                               </div>
+                                      <br>
+                  
+                  
+      
+      
+                    
+        
+
+
+
+
               <div class="container">
                   <hr class="class bg-secondary">
               </div>
@@ -368,36 +685,82 @@
 
 
 
+  <div class="container">
+    <div class="row justify-content-center">
+       
+       
+       <div class="px-4 pt-5 my-5 text-center">
+           <h1 class="text-primary">Classic Models Power BI Section</h1>
+           <div class="col-lg-6 mx-auto">
+             <p class="">The Classic Models database is a comprehensive example of a business-oriented relational database, 
+              ideal for showcasing data management, querying, and relational integrity. This database mimics the 
+              operations of a classic  model retailer, with various tables capturing critical aspects of the business, 
+              such as customer information, orders, products, and payments. The classicmodels database consists of the following tables:
+            customers, employees, offices, orderdetails, orders, payments, productlines, products</p>
+            
+           </div>
+          
+         </div>
+  
+  
+     </div>
+  </div>
+  <hr class="class bg-secondary">
+  <br>
 
 
-
-
-
-
-
-
-
-  <section>
-<div class="container">
+  
+<section>
+  <div class="container">
     <div class="row justify-content-center align-items-center">
-       <div class="col-md-5 text-left text-md-">
-           <h2>
-              <div class="fw-bold text-danger text-center">Stage 20</div>
-            </h2>
-             <h3 >Products Commonly Purchasd Together</h3>
-             <p>Understanding which products are frequently or rarely purchased together can provide valuable
-               insights into customer buying patterns and preferences. This analysis helps in improving product
-                bundling strategies, 
-              optimizing cross-selling opportunities, and enhancing inventory management </p><br>
-              
-           </div>
-             <div class="col-md-5 text-center d-sm-block d-md-block">
-                <img class="img-fluid"  src="data/img/classic/prod1.PNG" alt="">
-           </div>
-                  <br>
+        <div class="col-md-5 text-left text-md-">
+            <h2>
+                <div class="fw-bold text-primary text-center">Stage 1</div>
+           </h2>
+                <h3>Creating View for connecting to Power Bi</h3>
+                <p>we want to create a view and use that view to connect to power bi and start working the dashboard
+                  a view is a presaved query that you can run at anytime. open up a new script to write the view, but
+                  query we wnat to use for the dashboard will have sales, value and cost of sales, add a product and customer level
+                  to show the office, country and evrything we can visualise in power bi, to do that we need to join 
+                  all the tables together, i will bring everything back from the orders table and i will name it ord
+                  or i will join order details or date and we will join that on order number = order number, and we will
+                  bring customers table, and we will remember the order table has the customer number and we will aslo bring products table
+                  and we will join that on order details dot product code = product.product code, lets bring in the employes in the 
+                  offices, we cant bring in the office withpout bringing in the employess table, we join that on our
+                  sales rep employee number from our customers table, and then bring in our office as we say office
+                  code = o.office code</p><br>
+                  <a href="" class="btn btn-primary"> Get database Script</a>
+                
+        </div>
+    <div class="col-md-5 text-center d-sm-block d-md-block">
+          <img class="img-fluid"  src="data/img/classic/power1.PNG" alt="">
+     </div>
+            <br>
+  
+            <div class="container">
+                <hr class="class bg-secondary">
+            </div>
+  
+    </div>
+  
+  </div>
+  </section>
+  
 
 
 
+
+
+
+
+
+  <footer class="bg-secondary text-light text-center py-3">
+    <p>&copy; 2023 @Ogierumuaport2023. All rights reserved.</p>
+  </footer>
+
+
+
+ 
                   
                              
                             
@@ -405,122 +768,7 @@
 
 
                 
-              <br>
-              <br>
-    <div class="row justify-content-center align-items-center">
-       <div class="col-md-5 text-left text-md-">
-           <h2>
               
-            </h2>
-             <h3>All Columns in orderdetails Table</h3>
-             <p>
-              show all columns form orderdetail table, as we dont nneed to see thr order table
-              we can use the ordedetails table and briind in the product table on the productcode, 
-              orderdetails t1 and do an inner join of the product table with productcode taking t2
-              which gives us the name of the product and thr productline</p><br>
-              
-                
-           </div>
-             <div class="col-md-5 text-center d-sm-block d-md-block">
-                <img class="img-fluid"  src="data/img/classic/prod2.PNG" alt="">
-           </div>
-                  <br>
-              <div class="container">
-                      <hr class="class bg-secondary">
-            </div>
-      </div>
- </div>
-</section>
-
-<section>
-<div class="container">
-    <div class="row justify-content-center align-items-center">
-       <div class="col-md-5 text-left text-md-">
-           <h2>
-              <div class="fw-bold text-primary text-center">Stage 6</div>
-            </h2>
-             <h3>Bettercap tool</h3>
-             <p>BetterCAP is a powerful, open-source network attack and penetration testing framework that is 
-              designed for various network-related tasks, particularly those related to Man-In-The-Middle (MITM) attacks. 
-              It's written in the Go programming language and provides a modular 
-              architecture that allows users to extend its functionality through plugins </p><br>
-              <p>use bettercap iface eth0 to run bettercap in the comman line interface</p>
-              
-              
-           </div>
-             <div class="col-md-5 text-center d-sm-block d-md-block">
-                <img class="img-fluid"  src="./cyberimages/bettercap1.PNG" alt="">
-           </div>
-                  <br>
-              <div class="container">
-                      <hr class="class bg-secondary">
-            </div>
-      </div>
- </div>
-</section>
-
-
-
-
-
-
-
-<section>
-<div class="container">
-    <div class="row justify-content-center align-items-center">
-       <div class="col-md-5 text-left text-md-">
-           <h2>
-              <div class="fw-bold text-primary text-center">Stage 7</div>
-            </h2>
-             <h3>Bettercap help</h3>
-             <p>BetterCAP supports various network protocols, including HTTP, HTTPS, FTP, SIP, IMAP, SMTP, and more. 
-              This makes it versatile 
-              for testing and analyzing different types of network traffic </p><br>
-              <p>use help to run bettercap help in the comman line interface</p>
-              
-              
-           </div>
-             <div class="col-md-5 text-center d-sm-block d-md-block">
-                <img class="img-fluid"  src="./cyberimages/7. bettercaphelp.PNG" alt="">
-           </div>
-                  <br>
-              <div class="container">
-                      <hr class="class bg-secondary">
-            </div>
-      </div>
- </div>
-</section>
-
-
-
-<section>
-<div class="container">
-    <div class="row justify-content-center align-items-center">
-       <div class="col-md-5 text-left text-md-">
-           <h2>
-              <div class="fw-bold text-primary text-center">Stage 8</div>
-            </h2>
-             <h3>Bettercap Modules</h3>
-             <p>BetterCAP's modular architecture allows users to extend its capabilities by d
-              eveloping and adding their own modules. This flexibility makes it a valuable tool for security researchers 
-              and penetration testers who need specific functionalities.</p><br>
-              <p>use help net.name of any of the module to run bettercap modules in the comman line interface</p>
-              
-              
-           </div>
-             <div class="col-md-5 text-center d-sm-block d-md-block">
-                <img class="img-fluid"  src="./cyberimages/8 bettercapmodula.PNG" alt="">
-           </div>
-                  <br>
-              <div class="container">
-                      <hr class="class bg-secondary">
-            </div>
-      </div>
- </div>
-</section>
-
-
-
 
 
 
