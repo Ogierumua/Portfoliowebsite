@@ -1,27 +1,90 @@
-<!doctype html>
+</main><!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LAN/WiFi Migration — Rockwell Automation | Anthony Ogierumua</title>
-  <meta name="description" content="LAN/WiFi migration project at Rockwell Automation Milton Keynes — Anthony Ogierumua" />
+  <meta name="description" content="Project: Vessel IT infrastructure and 90-day CCTV upgrade (Awaritse) — Anthony Ogierumua" />
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { background:#f8f9fa; }
-    .hero { background:linear-gradient(90deg,rgba(220,53,69,0.05),rgba(220,53,69,0.02)); padding:3rem 0; }
-    .badge-tech { background:#eef6ff; color:#dc3545; font-weight:600; border-radius:0.5rem; padding:0.35rem 0.6rem; }
-    .card-compact { border-radius:12px; box-shadow:0 6px 18px rgba(18,38,63,.06); }
+    :root {
+      --accent:#fd0d7d;
+    }
+    body { background:#f8f9fa; color:#212529; }
+    .hero { background: linear-gradient(90deg, rgba(13,110,253,0.06), rgba(13,110,253,0.02)); padding: 3rem 0; }
+    .badge-tech { background:#eef6ff; color:var(--accent); font-weight:600; border-radius:0.5rem; padding:0.35rem 0.6rem; }
+    .card-compact { border-radius:12px; box-shadow: 0 6px 18px rgba(18, 38, 63, 0.06); }
+    .muted-small { font-size:.9rem; color:#6c757d; }
+    .media-preview img, .media-preview video { max-height:360px; width:auto; border-radius:8px; }
+    .gallery-grid img{ width:100%; height:200px; object-fit:cover; border-radius:8px; }
     footer { padding:2rem 0; color:#6c757d; }
+    @media (max-width:768px){ .hero { padding: 2rem 0; } }
   </style>
 </head>
 <body>
 
-<header class="container">
-  <nav class="d-flex py-3 align-items-center">
-    <a href="./index.html" class="me-auto text-decoration-none"><strong>Anthony O. Ogierumua</strong></a>
-    <small class="text-muted">Network Systems Engineer • Cybersecurity • MAAD AI</small>
-  </nav>
+   <header class="main-header">
+
+ 
+<nav class="navbar header-nav navbar-expand-lg navbar-dark bg-secondary fw-bold ">
+    
+  <div class="container-xxl">
+    <a class="navbar-brand" href="./index.html">
+      <h4><img src="data/img/tee.png" alt="" height="40">Ogierumua <span class="text-danger ">- Portfolio</span> </h4></a>
+  
+   
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+       
+  <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="btn btn-danger fw-bold" href="./index.html">Home</a>
+      </li>
+          <li class="nav-item active">
+              <a class="nav-link text-white" href="./index.html">About Me</a>
+          </li>
+          
+          <li class="nav-item">
+              <a class="nav-link text-white" href="./cyberprojects.html">Porfolio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#python">Skills</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#cloud">Service</a>
+          </li>
+          <li class="nav-item">
+             
+          </li>
+      </ul>
+  </div>
+
+ <div class="mx-auto d-none d-lg-block">
+  <a class="nav-link text-white fw-bold" href="#contact">Contact Me</a>
+
+ </div>
+
+
+
+ </div>
+  
+</nav>
 </header>
+
+  <header class="container">
+    <nav class="d-flex py-3 align-items-center">
+    
+      <small class="muted-small">Network Systems Engineer • Cybersecurity • MAAD AI</small>
+    </nav>
+  </header>
 
 <!-- HERO -->
 <section class="hero mb-4">
@@ -62,15 +125,17 @@
   </div>
 </section>
 
-<!-- MAIN -->
-<main class="container mb-5">
-  <div class="row g-4">
-    <div class="col-lg-7">
-      <div class="card card-compact p-4 mb-3">
-        <h3 class="h5">Project Summary</h3>
-        <p class="text-muted">I participated in the Rockwell Automation LAN/WiFi upgrade at their Milton Keynes site, representing Sentinel Technologies. My role focused on <strong>switch migration and LAN cutover</strong>. Tasks included removing old switches, racking new Cisco 9300 series devices, applying patch cables, supporting AP hanging and testing, and assisting with traffic migration under remote guidance via AnyDesk/MS Teams.</p>
+  <!-- MAIN -->
+  <main class="container mb-5">
 
-        <h4 class="h6 mt-3">My Responsibilities</h4>
+    <div class="row g-4">
+      <!-- Summary (left) -->
+      <div class="col-lg-7">
+        <div class="card card-compact p-4 mb-3">
+          <h3 class="h5">Project Summary</h3>
+          I participated in the Rockwell Automation LAN/WiFi upgrade at their Milton Keynes site, representing Sentinel Technologies. My role focused on <strong>switch migration and LAN cutover</strong>. Tasks included removing old switches, racking new Cisco 9300 series devices, applying patch cables, supporting AP hanging and testing, and assisting with traffic migration under remote guidance via AnyDesk/MS Teams.</p>
+
+           <h4 class="h6 mt-3">My Responsibilities</h4>
         <ul>
           <li>Rack and cable Cisco 9300 series switches</li>
           <li>Assist ComTech team with AP installation (8 total)</li>
@@ -86,32 +151,163 @@
           <span class="badge bg-light text-dark">PuTTY</span>
           <span class="badge bg-light text-dark">AnyDesk</span>
           <span class="badge bg-light text-dark">MS Teams</span>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Gallery -->
-    <div class="col-lg-5">
-      <div id="gallery" class="card p-3 card-compact mb-3">
-        <h3 class="h6">Project Gallery</h3>
-        <img src="assets/rockwell1.jpg" class="d-block w-100 mb-2 rounded" alt="Switch migration photo">
-        <img src="assets/rockwell2.jpg" class="d-block w-100 mb-2 rounded" alt="Rack setup photo">
-        <div class="d-grid gap-2">
-          <a id="report-download" href="assets/Rockwell_Report.pdf" target="_blank" class="btn btn-danger">Download project report (PDF)</a>
+        <!-- Story / Impact -->
+        <div class="card p-4 card-compact mb-3">
+          <h3 class="h6">Impact & Outcome</h3>
+          <p class="muted-small mb-1"><strong>Before:</strong> The LAN/WiFi migration modernized the network infrastructure at Rockwell Automation’s Milton
+Keynes site, replacing outdated switching hardware with Cisco 9300 series, and ensuring improved
+reliability, scalability, and performance. Before: Legacy Cisco switches with limited support and
+inconsistent WiFi coverage.</p>
+          <p class="muted-small mb-1"><strong>After:</strong> Modernized LAN backbone, properly patched and documented, improved WiFi coverage,
+and validated connectivity with minimal operational disruption. This project demonstrated my ability
+to work on-site under tight schedules, coordinate with global teams, and deliver critical
+infrastructure upgrades efficiently</p>
+          <p class="mb-0"><strong>Business value:</strong> Modernized LAN and WiFi infrastructure with Cisco 9300 series—delivering improved reliability, scalability, and performance in just 2 weeks with minimal operational disruption..</p>
+        </div>
+
+        <!-- Admin: Attach media -->
+        <div class="card p-3 card-compact" id="admin-panel">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="h6 mb-0">Attach & Preview Media (local only)</h3>
+            <small class="text-muted">Use to preview before uploading to repo</small>
+          </div>
+          <div class="row mt-3 g-2">
+            <div class="col-md-6">
+              <label class="form-label small">Add photos (multiple)</label>
+              <input id="imgInput" type="file" accept="image/*" class="form-control form-control-sm" multiple>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small">Add a demo video (mp4)</label>
+              <input id="videoInput" type="file" accept="video/mp4,video/webm" class="form-control form-control-sm">
+            </div>
+          </div>
+
+          <div class="media-preview mt-3" id="mediaPreview">
+            <!-- Previews injected by JS -->
+          </div>
+
+          <small class="text-muted d-block mt-2">Note: Uploaded files are only previewed in-browser for preparing your repo. Save media to your `assets/` folder and replace placeholders in this page for public hosting.</small>
         </div>
       </div>
-      <div class="card p-3 card-compact">
-        <h3 class="h6">Project Metadata</h3>
+
+      <!-- Right column: Gallery + Report -->
+      <div class="col-lg-5">
+  <div id="gallery" class="card p-3 card-compact mb-3">
+    <h3 class="h6">Project Gallery</h3>
+
+          <!-- Bootstrap carousel for images -->
+<div id="projectCarousel" class="carousel slide mb-3" data-bs-ride="carousel" data-bs-wrap="true">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="6"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="7"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="8"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="9"></button>
+  </div>
+
+  <!-- Carousel inner -->
+  <div class="carousel-inner" style="min-height:200px;">
+    <div class="carousel-item active">
+      <img src="data/img/rockwell/rock7.jpeg" class="d-block w-100" alt="Project photo 1" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/img/rockwell/rock8.jpeg" class="d-block w-100" alt="Project photo 2" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/img/rockwell/rock6.jpeg" class="d-block w-100" alt="Project photo 3" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/img/rockwell/rock5.jpeg" class="d-block w-100" alt="Project photo 4" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/img/rockwell/rock9.jpeg" class="d-block w-100" alt="Project photo 5" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/imgrockwell/rock9.jpeg" class="d-block w-100" alt="Project photo 6" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/img/rockwell/rock4.jpeg" class="d-block w-100" alt="Project photo 7" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/img/rockwell/rock3.jpeg" class="d-block w-100" alt="Project photo 8" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/img/rockwell/rock2.jpeg" class="d-block w-100" alt="Project photo 9" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+    <div class="carousel-item">
+      <img src="data/img/rockwell/rock1.jpeg" class="d-block w-100" alt="Project photo 10" style="height:280px; object-fit:cover; border-radius:8px;">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+         <!-- Video preview / modal trigger -->
+<div class="d-grid gap-2">
+  <!-- FIXED button: target the modal by ID -->
+  <button class="btn btn-outline-danger" id="openVideoBtn" data-bs-toggle="modal" data-bs-target="#videoModal">
+    Play demo video
+  </button>
+
+  <a id="report-download" href="assets/QV4-001-04-2025.pdf" target="_blank" class="btn btn-danger">Download project report (PDF)</a>
+  <a href="mailto:ogierumuaanthony@gmail.com?subject=Project%20Enquiry%20-%20Vessel%20IT" class="btn btn-outline-danger">Contact about this project</a>
+</div>
+
+<!-- Project Metadata card stays exactly here -->
+<div class="card p-3 card-compact mt-3">
+  <h3 class="h6">Project Metadata</h3>
         <dl class="row mb-0">
           <dt class="col-5 text-muted">Client</dt><dd class="col-7">Rockwell Automation</dd>
           <dt class="col-5 text-muted">Role</dt><dd class="col-7">Network Engineer (Consultant)</dd>
           <dt class="col-5 text-muted">Delivery</dt><dd class="col-7">1 day (June 29, 2024)</dd>
           <dt class="col-5 text-muted">Artifacts</dt><dd class="col-7">Photos, report, WhatsApp updates</dd>
         </dl>
+</div>
+
+<!-- Video Modal (no changes here except make sure src path matches your file) -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project Video — Vessel IT & CCTV Upgrade</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <video id="modalVideo" class="w-100" controls>
+          <source src="data/img/rockwell/rockwell.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
-</main>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+  </html>
+
+ 
 
 <footer class="container text-center">
   <small>© 2025 Anthony O. Ogierumua — Rockwell Automation LAN/WiFi Migration</small>

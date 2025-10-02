@@ -35,7 +35,7 @@
   <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
-          <a class="btn btn-danger fw-bold" href="./resume.html">Resume</a>
+          <a class="btn btn-danger fw-bold" href="./index.html">Home</a>
       </li>
           <li class="nav-item active">
               <a class="nav-link text-white" href="./index.html">About Me</a>
@@ -102,10 +102,23 @@
 
   </section>
 
-  
-<!-- Carousel Gallery Section -->
+ <!-- Carousel Gallery Section -->
 <div class="container mt-5">
     <h2 class="text-center mb-4">My Project Gallery</h2>
+
+    <style>
+        /* Limit carousel size */
+        .carousel {
+            max-width: 800px;   /* set carousel width */
+            margin: auto;       /* center on page */
+        }
+
+        .carousel-inner img {
+            max-height: 450px;   /* control height */
+            width: 100%;         /* full width */
+            object-fit: cover;   /* fill box, no blank sides */
+        }
+    </style>
 
     <!-- Carousel -->
     <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -127,28 +140,21 @@
             <div class="carousel-item">
                 <img src="data/img/proj/tee2.jpg" class="d-block w-100" alt="Image 2">
             </div>
-
-             <div class="carousel-item">
-                <img src="data/img/proj/tee4.jpg" class="d-block w-100" alt="Image 2">
+            <div class="carousel-item">
+                <img src="data/img/proj/tee4.jpg" class="d-block w-100" alt="Image 3">
             </div>
-
-             <div class="carousel-item">
-                <img src="data/img/proj/tee5.jpg" class="d-block w-100" alt="Image 2">
+            <div class="carousel-item">
+                <img src="data/img/proj/tee5.jpg" class="d-block w-100" alt="Image 4">
             </div>
-
-             <div class="carousel-item">
-                <img src="data/img/proj/tee5.jpg" class="d-block w-100" alt="Image 2">
+            <div class="carousel-item">
+                <img src="data/img/proj/tee6.jpg" class="d-block w-100" alt="Image 5">
             </div>
-
-             <div class="carousel-item">
-                <img src="data/img/proj/tee7.jpg" class="d-block w-100" alt="Image 2">
+            <div class="carousel-item">
+                <img src="data/img/proj/tee7.jpg" class="d-block w-100" alt="Image 6">
             </div>
-
-             <div class="carousel-item">
-                <img src="data/img/proj/tee8.jpg" class="d-block w-100" alt="Image 2">
+            <div class="carousel-item">
+                <img src="data/img/proj/tee8.jpg" class="d-block w-100" alt="Image 7">
             </div>
-          
-            
         </div>
 
         <!-- Carousel Controls -->
@@ -162,6 +168,7 @@
         </button>
     </div>
 </div>
+
 <br>
 <br>
 <br>
@@ -210,7 +217,7 @@
 
 
 <section id="services" class="section bg-gray" style="background-image: 
-     url(data/img/18.jpeg); background-repeat: no-repeat; background-size: cover;">
+     url(data/img/16.jpeg); background-repeat: no-repeat; background-size: cover;">
      <div class="container">
         <div class="section-heading">
             <h3>My Projects</h3>
@@ -274,12 +281,16 @@
                 <div class="feature-box bg-4">
                     <div class="icon"><i class="bx bx-brush"> </i></div>
                     <div class="content">
-                        <h5>Contacting & Announcing the Winners 
+                        <h5>Bosch Hikvision Migration 
                         </h5> 
-                        <p>
-                             Nominees  for BONI Awards are gained via our online nomination 
-                            form from our website and Social media platforms. . 
+                       <p>
+                           Prague Air Depot IT Infrastructure Deployment (SPIROL International, Prague) — Coordinated and 
+                           managed the deployment of the new Prague facility IT infrastructure, including Ethernet cabling, 
+                           Juniper switches, access points, CATO appliance configuration, Teams telephony integration, 
+                           and security camera planning. Oversaw hardware inventory, installation, and configuration while 
+                           ensuring minimal downtime and compliance with US/UK IT standards. 
                         </p>
+                        <a href="./bosch-hikvision-migrate.html" class="coloured-btn mt-1"> Go to Project</a>
                     </div>
 
                 </div>
@@ -290,27 +301,18 @@
                 <div class="feature-box bg-5">
                     <div class="icon"><i class="bx bx-brush"> </i></div>
                     <div class="content">
-                        <h5>Promote Your Win </h5> 
+                        <h5>Vessel Simrad Radar Deployment</h5> 
                         <p>
-                           Nominees  for BONI Awards are gained via our online nomination 
-                            form from our website and Social media platforms. .
+                          Led the deployment of Simrad radar systems across multiple Mobil vessels, including rack/mast mounting of radar hardware, VLAN/routing integration on Cisco switches, VMware ESXi/iLO server
+                           provisioning, and Eaton UPS-backed power resilience. Configured PRTG monitoring and bridge display integration for radar telemetry, enabling proactive alerting and shore-side support. 
+                          Coordinated a 3–6 engineer team onboard, ensuring safety compliance and delivering full radar + IT integration in 3–7 day offshore visits.
                         </p>
+                         <a href="./simrad-radar.html" class="coloured-btn mt-1"> Go to Project</a>
                     </div>
 
                 </div>
 
             </div>
-
-            <div class="col-md-6">
-                <div class="feature-box bg-6">
-                    <div class="icon"><i class="bx bx-brush"> </i></div>
-                    <div class="content">
-                        <h5> Social Media Marketing</h5> 
-                        <p>
-                             Nominees  for BONI Awards are gained via our online nomination 
-                            form from our website and Social media platforms. 
-                        </p>
-                    </div>
 
                 </div>
 
@@ -322,16 +324,6 @@
 
 
      </section>
-
-
-
-
-
-
-
-
-
-
 
 
 <section id="skills" class="secction">
@@ -393,35 +385,6 @@
 </section>
 
 
-<section id="portfolio" class="section bg-red">
-  <div class="container">
-    <div class="section-heading">
-      <h3>Latest Projects</h3>
-    </div>
-    <div class="portfolio-box">
-      <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3
-      justify-content-around align-items-center">
-      <div class="col-md-6 col-lg-5">
-        <div class="portfolio-img">
-          <img src="data/img/skill.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-5">
-        <div class="portfolio-text">
-          <span>Data Analysis Proj</span>
-          <h4>Data Analysis and Power Bi Proj</h4>
-          <p>Time Series Forecasting: Developing models to forecast trends, demand, or other time-dependent variables, 
-            which is crucial for inventory management, financial planning, and market analysis.</p>
-            <a href="./proj1.html" class=" colored-btn mt-1">Live Demo </a>
-
-        </div>
-      </div>
-    </div>
-    </div>
-
-  </div>
-  
-</section>
 
 </main>
 
