@@ -170,24 +170,7 @@ infrastructure upgrades efficiently</p>
 
         <!-- Admin: Attach media -->
         <div class="card p-3 card-compact" id="admin-panel">
-          <div class="d-flex justify-content-between align-items-center">
-            <h3 class="h6 mb-0">Attach & Preview Media (local only)</h3>
-            <small class="text-muted">Use to preview before uploading to repo</small>
-          </div>
-          <div class="row mt-3 g-2">
-            <div class="col-md-6">
-              <label class="form-label small">Add photos (multiple)</label>
-              <input id="imgInput" type="file" accept="image/*" class="form-control form-control-sm" multiple>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label small">Add a demo video (mp4)</label>
-              <input id="videoInput" type="file" accept="video/mp4,video/webm" class="form-control form-control-sm">
-            </div>
-          </div>
-
-          <div class="media-preview mt-3" id="mediaPreview">
-            <!-- Previews injected by JS -->
-          </div>
+   
 
           <small class="text-muted d-block mt-2">Note: Uploaded files are only previewed in-browser for preparing your repo. Save media to your `assets/` folder and replace placeholders in this page for public hosting.</small>
         </div>
@@ -263,12 +246,10 @@ infrastructure upgrades efficiently</p>
          <!-- Video preview / modal trigger -->
 <div class="d-grid gap-2">
   <!-- FIXED button: target the modal by ID -->
-  <button class="btn btn-outline-danger" id="openVideoBtn" data-bs-toggle="modal" data-bs-target="#videoModal">
-    Play demo video
-  </button>
+  
 
-  <a id="report-download" href="assets/QV4-001-04-2025.pdf" target="_blank" class="btn btn-danger">Download project report (PDF)</a>
-  <a href="mailto:ogierumuaanthony@gmail.com?subject=Project%20Enquiry%20-%20Vessel%20IT" class="btn btn-outline-danger">Contact about this project</a>
+  <a id="report-download" href="./data/report/pjameson.pdf" target="_blank" class="btn btn-danger">Download project report (PDF)</a>
+ 
 </div>
 
 <!-- Project Metadata card stays exactly here -->
@@ -282,30 +263,9 @@ infrastructure upgrades efficiently</p>
         </dl>
 </div>
 
-<!-- Video Modal (no changes here except make sure src path matches your file) -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Project Video — Vessel IT & CCTV Upgrade</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <video id="modalVideo" class="w-100" controls>
-          <source src="data/img/rockwell/rockwell.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
-  </body>
-  </html>
 
  
 
